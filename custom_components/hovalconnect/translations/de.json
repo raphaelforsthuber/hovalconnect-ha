@@ -34,9 +34,20 @@
     }
   },
   "entity": {
+    "select": {
+      "program": {
+        "name": "{circuit_name} Programm",
+        "state": {
+          "week1": "Wochenprogramm 1",
+          "week2": "Wochenprogramm 2",
+          "constant": "Konstant",
+          "ecoMode": "Eco-Modus"
+        }
+      }
+    },
     "sensor": {
       "circuit_status":           {"name": "Status"},
-      "active_program":           {"name": "Aktives Programm"},
+      "active_program":           {"name": "Aktives Programm", "state": {"week1": "Wochenprogramm 1", "week2": "Wochenprogramm 2", "constant": "Konstant", "ecoMode": "Eco-Modus"}},
       "hk_circuit_temp_actual":   {"name": "Heizkreis Temperatur"},
       "hk_circuit_temp_target":   {"name": "Heizkreis Solltemperatur"},
       "ww_circuit_temp_actual":   {"name": "Warmwasser Temperatur"},

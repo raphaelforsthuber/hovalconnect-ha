@@ -34,9 +34,20 @@
     }
   },
   "entity": {
+    "select": {
+      "program": {
+        "name": "{circuit_name} program",
+        "state": {
+          "week1": "Weekly program 1",
+          "week2": "Weekly program 2",
+          "constant": "Constant",
+          "ecoMode": "Eco mode"
+        }
+      }
+    },
     "sensor": {
       "circuit_status":           {"name": "Status"},
-      "active_program":           {"name": "Active Program"},
+      "active_program":           {"name": "Active Program", "state": {"week1": "Weekly program 1", "week2": "Weekly program 2", "constant": "Constant", "ecoMode": "Eco mode"}},
       "hk_circuit_temp_actual":   {"name": "Heating Circuit Temperature"},
       "hk_circuit_temp_target":   {"name": "Heating Circuit Target Temperature"},
       "ww_circuit_temp_actual":   {"name": "Hot Water Temperature"},
