@@ -3,21 +3,21 @@
     "step": {
       "user": {
         "title": "Hoval Connect",
-        "description": "Tokens aus dem Setup Tool einfügen.",
+        "description": "Enter tokens from the Setup Tool.",
         "data": {
           "access_token": "Access Token",
           "refresh_token": "Refresh Token"
         }
       },
       "plant": {
-        "title": "Anlage auswählen",
+        "title": "Select Plant",
         "data": {
-          "plant_id": "Anlage"
+          "plant_id": "Plant"
         }
       },
       "reauth_confirm": {
-        "title": "Hoval Connect – Neu anmelden",
-        "description": "Tokens abgelaufen. Setup Tool erneut ausführen.",
+        "title": "Hoval Connect – Re-authenticate",
+        "description": "Tokens expired. Run the Setup Tool to get new tokens.",
         "data": {
           "access_token": "Access Token",
           "refresh_token": "Refresh Token"
@@ -25,36 +25,47 @@
       }
     },
     "error": {
-      "cannot_connect": "Verbindung fehlgeschlagen – Token ungültig oder abgelaufen."
+      "cannot_connect": "Connection failed – token invalid or expired."
     },
     "abort": {
-      "no_plants": "Keine Anlagen gefunden.",
-      "already_configured": "Bereits konfiguriert.",
-      "reauth_successful": "Erfolgreich neu authentifiziert."
+      "no_plants": "No plants found.",
+      "already_configured": "Already configured.",
+      "reauth_successful": "Re-authentication successful."
     }
   },
   "entity": {
+    "select": {
+      "program": {
+        "name": "{circuit_name} program",
+        "state": {
+          "week1": "Weekly program 1",
+          "week2": "Weekly program 2",
+          "constant": "Constant",
+          "ecoMode": "Eco mode"
+        }
+      }
+    },
     "sensor": {
       "circuit_status":           {"name": "Status"},
-      "active_program":           {"name": "Aktives Programm"},
-      "hk_circuit_temp_actual":   {"name": "Heizkreis Temperatur"},
-      "hk_circuit_temp_target":   {"name": "Heizkreis Solltemperatur"},
-      "ww_circuit_temp_actual":   {"name": "Warmwasser Temperatur"},
-      "ww_circuit_temp_target":   {"name": "Warmwasser Solltemperatur"},
-      "flow_temp_actual":         {"name": "Vorlauf Ist"},
-      "flow_temp_target":         {"name": "Vorlauf Soll"},
-      "room_temp_actual":         {"name": "Raumtemperatur Ist"},
-      "room_temp_target":         {"name": "Raumtemperatur Soll"},
-      "outside_temperature":      {"name": "Außentemperatur"},
-      "generator_temp_actual":    {"name": "Wärmeerzeuger Vorlauf Ist"},
-      "generator_temp_target":    {"name": "Wärmeerzeuger Vorlauf Soll"},
+      "active_program":           {"name": "Active Program", "state": {"week1": "Weekly program 1", "week2": "Weekly program 2", "constant": "Constant", "ecoMode": "Eco mode"}},
+      "hk_circuit_temp_actual":   {"name": "Heating Circuit Temperature"},
+      "hk_circuit_temp_target":   {"name": "Heating Circuit Target Temperature"},
+      "ww_circuit_temp_actual":   {"name": "Hot Water Temperature"},
+      "ww_circuit_temp_target":   {"name": "Hot Water Target Temperature"},
+      "flow_temp_actual":         {"name": "Flow Temperature"},
+      "flow_temp_target":         {"name": "Flow Temperature Target"},
+      "room_temp_actual":         {"name": "Room Temperature"},
+      "room_temp_target":         {"name": "Room Temperature Target"},
+      "outside_temperature":      {"name": "Outside Temperature"},
+      "generator_temp_actual":    {"name": "Generator Flow Temperature"},
+      "generator_temp_target":    {"name": "Generator Flow Temperature Target"},
       "modulation":               {"name": "Modulation"},
-      "operating_hours":          {"name": "Betriebsstunden"},
-      "operation_cycles":         {"name": "Schaltzyklen"},
-      "operating_hours_over_50":  {"name": "Betriebsstunden über 50%"},
-      "error_code":               {"name": "Fehlercode"},
-      "storage_temp_actual":      {"name": "Speichertemperatur"},
-      "hot_water_temp_target":    {"name": "Warmwasser Solltemperatur"}
+      "operating_hours":          {"name": "Operating Hours"},
+      "operation_cycles":         {"name": "Switching Cycles"},
+      "operating_hours_over_50":  {"name": "Operating Hours Above 50%"},
+      "error_code":               {"name": "Error Code"},
+      "storage_temp_actual":      {"name": "Storage Temperature"},
+      "hot_water_temp_target":    {"name": "Hot Water Target Temperature"}
     }
   }
 }
